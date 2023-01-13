@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body{
+  background-image: url(../images/dice.png);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+    margin: 0;
+    background-color: #0B2434;
+    padding: 20px;
+}
+
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #F5F5F5;
+    height: 600px;
+    max-width: 1000px;
+    border-radius: 10px;
+    gap: 20px;
+    padding: 40px;
+}
+
+.die-container{
+  display:grid ;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto auto;
+  gap: 20px;
+}
+
+.die{
+  width: 50px;
+  height: 50px;
+box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+border-radius: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+padding: 40px;
+background-color: white;
+
+}
+
+.die-num{
+  font-size: 2.8rem;
+}
+
+.roll-btn{
+  color: #ffffff;
+  font-family: 'Karla';
+  font-weight: 700;
+  line-height: 19px;
+  font-size: 30px;
+  border: none;
+  width: 20%;
+  height: 17%;
+  background: #5035FF;
+  box-shadow: 0px 3.2px 7.68px rgba(0, 0, 0, 0.18);
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 15px;
+  text-align: center;
+}
+
+.roll-btn:focus{
+  outline: none;
+}
+
+.roll-btn:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+.title {
+  font-size: 60px;
+  margin: 0;
+}
+
+.instructions {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  margin-top: 0;
+  text-align: center;
+  font-size: 20px;
+}
+
